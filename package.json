@@ -1,0 +1,31 @@
+{
+  "name": "diagnostico-precifica-mix",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "firebase-admin": "14.2.0",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.468.0",
+    "next": "15.5.22",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.6",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "15.5.22",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  }
+}

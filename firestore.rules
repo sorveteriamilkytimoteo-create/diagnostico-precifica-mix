@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // O navegador nunca acessa os leads diretamente. Todas as operações
+    // passam pelas rotas protegidas do Next.js usando o Firebase Admin SDK.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

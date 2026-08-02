@@ -60,3 +60,6 @@ O navegador envia eventos ao `dataLayer`; o GTM distribui os dados para GA4 e Me
 ## Publicação
 
 Crie um repositório e um projeto Vercel próprios, por exemplo `diagnostico-precifica-mix`. Replique nele as credenciais do Firebase central de diagnósticos e os IDs de rastreamento usados no ecossistema Mix.
+
+O `firebase-admin` está fixado na versão `13.6.0`. Mantenha `package.json` e
+`package-lock.json` juntos no mesmo commit para evitar falhas 500 nas rotas de gravação.

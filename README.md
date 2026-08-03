@@ -30,6 +30,7 @@ Copie `.env.example` para `.env.local` e preencha as credenciais. O projeto deve
 - `NEXT_PUBLIC_HOTMART_CHECKOUT_URL`
 - `NEXT_PUBLIC_ANALYTICS_DEBUG`
 - `NEXT_PUBLIC_SITE_URL`
+- `NEXT_PUBLIC_PRECIFICA_ACCESS_URL` (opcional; destino do botão de acesso na página de obrigado)
 
 ### Firebase Admin
 
@@ -63,3 +64,11 @@ Crie um repositório e um projeto Vercel próprios, por exemplo `diagnostico-pre
 
 O `firebase-admin` está fixado na versão `13.6.0`. Mantenha `package.json` e
 `package-lock.json` juntos no mesmo commit para evitar falhas 500 nas rotas de gravação.
+
+## Página de obrigado
+
+A rota `/obrigado` informa que os dados de acesso serão enviados por e-mail pela Hotmart, orienta os primeiros passos e disponibiliza suporte pelo WhatsApp `(31) 98323-8881`.
+
+Na Hotmart, configure a URL externa de agradecimento como:
+
+`https://diagnostico-precifica.gestaomix.online/obrigado`

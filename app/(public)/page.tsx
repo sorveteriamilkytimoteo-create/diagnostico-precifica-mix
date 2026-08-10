@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import {
   ArrowRight,
   Boxes,
@@ -9,6 +10,7 @@ import {
   ChevronRight,
   CircleDollarSign,
   ClipboardCheck,
+  ExternalLink,
   Gauge,
   Layers3,
   LockKeyhole,
@@ -217,6 +219,53 @@ function PrecificaLogo({ light = false }: { light?: boolean }) {
         <small className={`block text-[8px] font-bold tracking-[.15em] ${light ? "text-white/55" : "text-[#7a8595]"}`}>FOOD SERVICE</small>
       </span>
     </div>
+  );
+}
+
+function CreatorAuthority() {
+  return (
+    <aside className="mt-9 overflow-hidden rounded-[24px] border border-[#cfe4da] bg-[#f7fcfa]">
+      <div className="grid sm:grid-cols-[148px_1fr]">
+        <div className="relative aspect-[16/10] min-h-44 sm:aspect-auto sm:min-h-full">
+          <Image
+            src="/precifica-mix-fundadores-autoridade.webp"
+            alt="Luís e Lucas, criadores do Precifica Mix, em frente à Sorvetes Milky Timóteo"
+            fill
+            sizes="(max-width: 640px) 100vw, 148px"
+            className="object-cover object-center"
+          />
+        </div>
+
+        <div className="p-5">
+          <p className="text-xs font-black uppercase tracking-[.13em] text-[#008c66]">Criado dentro de uma operação real</p>
+          <h3 className="mt-2 text-xl font-black tracking-tight text-[#12231d]">Experiência prática + tecnologia</h3>
+          <p className="mt-3 text-sm leading-6 text-[#5f6f67]">
+            Lucas vive a rotina de sorveterias há mais de 8 anos. Luís é gerente da operação e bacharel em Sistemas de Informação. Juntos, transformaram a precificação manual em uma ferramenta simples para o food service.
+          </p>
+        </div>
+      </div>
+
+      <a
+        href="https://www.instagram.com/milky_timoteo/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conhecer a Sorvetes Milky Timóteo no Instagram"
+        className="group flex items-center gap-3 border-t border-[#cfe4da] bg-white px-4 py-3.5 transition hover:bg-[#f0faf6]"
+      >
+        <Image
+          src="/milky-timoteo-logo.webp"
+          alt="Logo da Sorvetes Milky"
+          width={48}
+          height={48}
+          className="h-12 w-12 shrink-0 rounded-full border border-[#e1e8e5] bg-white object-cover"
+        />
+        <span className="min-w-0 flex-1">
+          <strong className="block text-sm text-[#163029]">Conheça a operação onde tudo começou</strong>
+          <span className="mt-0.5 block text-sm font-bold text-[#008c66]">@milky_timoteo</span>
+        </span>
+        <ExternalLink size={18} className="shrink-0 text-[#7d8b84] transition group-hover:text-[#008c66]" />
+      </a>
+    </aside>
   );
 }
 
@@ -793,6 +842,8 @@ function Result({
                   </div>
                 ))}
               </div>
+
+              <CreatorAuthority />
             </div>
 
             <div className="flex flex-col justify-center bg-[#eff9f5] p-8 md:p-12">

@@ -858,7 +858,7 @@ function Result({
               <p className="mt-2 font-extrabold text-[#007e5c]">Pagamento único • sem mensalidade</p>
 
               <div className="mt-5 rounded-2xl border border-[#c9e8dc] bg-white/85 p-4">
-                <p className="font-extrabold text-[#075c47]">Você economiza R$ 60.</p>
+                <p className="font-extrabold text-[#075c47]">Você economiza R$ 50.</p>
                 <p className="mt-1 text-sm leading-6 text-[#68756f]">Menos do que o valor de uma única venda para corrigir preços que afetam todas as vendas.</p>
               </div>
 

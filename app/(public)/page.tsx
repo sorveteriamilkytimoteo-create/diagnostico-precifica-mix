@@ -195,7 +195,7 @@ const questions: Question[] = [
   {
     key: "intencao",
     category: "intencao_compra",
-    title: "Se você pudesse organizar preços e estoque com um pagamento único de R$ 37, faria sentido começar agora?",
+    title: "Se você pudesse organizar preços e estoque com um pagamento único de R$ 47, faria sentido começar agora?",
     hint: "Um produto precificado errado pode custar mais do que esse investimento.",
     answers: [
       { label: "Sim, quero organizar isso agora", score: 0 },
@@ -853,7 +853,7 @@ function Result({
               <p className="mt-6 text-sm font-bold text-[#617069]">Acesso completo ao Precifica Mix</p>
               <div className="mt-2 flex items-end gap-3">
                 <span className="mb-1 text-xl font-bold text-[#7d8983] line-through decoration-2">R$ 97</span>
-                <span className="text-5xl font-black tracking-tight text-[#0f1728]">R$ 37</span>
+                <span className="text-5xl font-black tracking-tight text-[#0f1728]">R$ 47</span>
               </div>
               <p className="mt-2 font-extrabold text-[#007e5c]">Pagamento único • sem mensalidade</p>
 
@@ -863,7 +863,7 @@ function Result({
               </div>
 
               <button type="button" onClick={onCheckout} className="cta mt-7 w-full">
-                QUERO APROVEITAR POR R$ 37 <ArrowRight size={19} />
+                QUERO APROVEITAR POR R$ 47 <ArrowRight size={19} />
               </button>
               <p className="mt-4 text-center text-xs text-[#7a8781]">
                 <LockKeyhole size={13} className="mr-1 inline" /> Acesso imediato após a confirmação • compra segura pela Hotmart
